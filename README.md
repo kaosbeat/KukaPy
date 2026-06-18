@@ -42,9 +42,10 @@ A Python package for controlling KUKA robots by interfacing with the KUKA Contro
    git clone https://github.com/your-username/kukapy.git
    cd kukapy
 Install dependencies:
-bash
-Copy
+```bash
 pip install -r requirements.txt
+```
+
 Deploying to KUKA Controller
 Transfer the .src files:
 Copy the files from the kukadriver directory onto the KUKA controller.
@@ -56,8 +57,7 @@ Run the necessary scripts (e.g., mappdk_kuka_server.src) on the robot to enable 
 Usage
 Below is a quick example to get started:
 
-python
-Copy
+```python
 from kukapy.robot import Robot
 
 # Initialize the robot connection
@@ -72,6 +72,8 @@ print("Current Position:", pos)
 
 # Disconnect from the robot
 robot.disconnect()
+
+```
 Contributing
 Contributions are welcome! If you have suggestions, improvements, or bug fixes, please open an issue or submit a pull request. For larger changes, consider discussing your ideas first by opening an issue.
 
